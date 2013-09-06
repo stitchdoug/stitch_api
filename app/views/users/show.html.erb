@@ -1,0 +1,26 @@
+<% provide(:title, @user.username) %>
+<div class="row">
+  <aside class="span4">
+    <section>
+      <h1>
+        <%= gravatar_for @user %>
+        <%= @user.username %>
+      </h1>
+      <p>
+        <%= @user.name %>
+      </p>
+    </section>
+    <section>
+      <%= render 'shared/stats' %>
+    </section>
+  </aside>
+  <div class="span8">
+    <!-- if @user.microposts.any? -->
+        <h3>Stitches (<!-- @user.microposts.count -->)</h3>
+        <ol class="stitches">
+          <!-- render @microposts -->
+        </ol>
+        <!-- will_paginate @microposts -->
+    <!-- end -->
+  </div>
+</div>
