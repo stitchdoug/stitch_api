@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="2811213834">
-    <data-source source="LOCAL" name="Rails stitch_api: cucumber" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="7d906663-7e1e-42c2-9be0-a6b1263346ad">
+  <component name="DataSourceManagerImpl" format="xml" hash="2745528830">
+    <data-source source="LOCAL" name="Rails stitch_api: cucumber" product="PostgreSQL" version="9.2.4" jdbc-version="3.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.2 JDBC3g (build 1002)" uuid="7d906663-7e1e-42c2-9be0-a6b1263346ad">
+      <identifier-quote-string>&quot;</identifier-quote-string>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://127.0.0.1/stitch_api_test</jdbc-url>
       <libraries>

@@ -1,0 +1,9 @@
+<li>
+  <span class="content"><%= stitch.description %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(stitch.created_at) %> ago.
+  </span>
+  <% if current_user?(stitch.user) %>
+      <%= render 'shared/delete_link', feed_item: stitch %>
+  <% end %>
+</li>

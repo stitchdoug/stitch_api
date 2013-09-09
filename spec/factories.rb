@@ -11,8 +11,12 @@ FactoryGirl.define do
     end
   end
 
-  #factory :micropost do
-  #  content "Lorem ipsum"
-  #  user
-  #end
+  factory :stitch do
+    name "Stitch"
+    description "Lorem ipsum"
+    notes "Stitch notes"
+    file_url "http://example.com/stitch_1"
+    rejected false
+    user
+  end
 end

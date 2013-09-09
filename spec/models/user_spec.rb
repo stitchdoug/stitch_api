@@ -18,7 +18,7 @@ describe User do
   it { should respond_to(:remember_token) }
   it { should respond_to(:admin) }
   it { should respond_to(:authenticate) }
-  #it { should respond_to(:microposts) }
+  it { should respond_to(:stitches) }
   #it { should respond_to(:feed) }
   #it { should respond_to(:relationships) }
   #it { should respond_to(:followed_users) }
@@ -168,6 +168,20 @@ describe User do
   describe "remember token" do
     before { @user.save }
     its(:remember_token) { should_not be_blank }
+  end
+
+  describe "stitch associations" do
+
+    before { @user.save }
+
+    it "should destroy associated stitches" do
+      stitches = @user.stitches.dup
+      @user.destroy
+      stitches.should_not be_empty
+      stitches.each do |stitch|
+        Stitch.find_by_id(stitch.id).should be_nil
+      end
+    end
   end
 
 end

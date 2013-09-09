@@ -1,9 +1,5 @@
-<div class="center hero-unit">
-  <h1>Welcome to the Stitch API</h1>
-
-  <h2>
-    Home page.
-  </h2>
-
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
-</div>
+<% if signed_in? && current_user.admin? %>
+    <%= render 'shared/home_admin' %>
+<% else %>
+    <%= render 'shared/home_signed_out' %>
+<% end %>
