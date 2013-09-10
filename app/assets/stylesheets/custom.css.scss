@@ -3,6 +3,7 @@
 /* mixins, variables, etc. */
 
 $grayMediumLight: #eaeaea;
+$grayMediumDark: #757575;
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -80,6 +81,21 @@ p {
   }
 }
 
+#logo-img {
+  img
+  {
+    opacity:1.0;
+    filter:alpha(opacity=100); /* For IE8 and earlier */
+    float: left;
+    margin-right: 10px;
+    padding-top: 0px;
+    line-height: 0;
+    &:hover {
+      opacity:0.7;
+      filter:alpha(opacity=70); /* For IE8 and earlier */
+    }
+  }
+}
 /* footer */
 
 footer {
@@ -255,4 +271,9 @@ aside {
   width: 100%;
   margin-top: 45px;
   @include box_sizing;
+}
+
+#api_key_well {
+  text-align: center;
+  color: $grayMediumDark;
 }

@@ -1,11 +1,13 @@
 <div class="center hero-unit">
   <h1>Welcome to the Stitch API</h1>
 
-  <h2>
+  <p>
     This API allows you to remotely create and display Stitches. Once a remote request has been made, it's
     entered into the queue and a Stitch is returned shortly thereafter. Prior to completion, a placeholder
     graphic or embedded player should be displayed. Content On Demand!
-  </h2>
+  </p>
 
   <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
 </div>
+
+<%= link_to image_tag("klablab.png", alt: "KlabLab"), 'http://klablab.com/' %>
