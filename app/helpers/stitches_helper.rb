@@ -8,6 +8,22 @@ module StitchesHelper
     Stitch.where("file_url is NULL and rejected is NULL").count
   end
 
+  def get_name(name)
+    # `name` will be nil in the database if one isn't given
+    name != "" ? name : "Untitled"
+  end
+
+  def get_status(rejected = nil, file_url = nil)
+    # Generate a <span> showing a status label
+    if rejected == true
+      content_tag(:span, "Rejected", :class => "label label-important")
+    elsif rejected != true && file_url != nil
+             content_tag(:span, "Complete", :class => "label label-success")
+    elsif rejected == nil && file_url == nil
+        content_tag(:span, "Pending", :class => "label")
+    end
+  end
+
   private
 
   def wrap_long_string(text, max_width = 30)

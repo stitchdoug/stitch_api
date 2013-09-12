@@ -41,13 +41,20 @@ class StitchesController < ApplicationController
 
   def destroy
     @stitch.destroy
+    flash[:success] = "Stitch updated"
     redirect_to root_url
   end
 
   private
 
   def correct_user
-    @stitch = current_user.stitches.find_by_id(params[:id])
+    # Admin should be able to delete all Stitches. Regular users should not
+
+    if current_user.admin?
+      @stitch = Stitch.find_by_id(params[:id])
+    else
+      @stitch = current_user.stitches.find_by_id(params[:id])
+    end
     redirect_to root_url if @stitch.nil?
   end
 

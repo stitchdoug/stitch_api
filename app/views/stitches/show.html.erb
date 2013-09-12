@@ -1,0 +1,17 @@
+<% provide(:title, get_name(@stitch.name)) %>
+<div class="row">
+  <aside class="span4">
+    <section>
+      <%= render 'shared/user_info' %>
+    </section>
+    <section>
+      <%= render 'shared/stats' %>
+    </section>
+  </aside>
+  <div class="span8">
+    <h2><%= get_name(@stitch.name) %></h2>
+    <%= render 'stitch' %>
+
+    <%= render 'images' %>
+  </div>
+</div>

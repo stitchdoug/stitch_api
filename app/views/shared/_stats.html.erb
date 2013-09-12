@@ -1,7 +1,7 @@
 <% @user ||= current_user %>
 <div class="stats">
   <% if signed_in? && current_user?(@user) %>
-    <h3>API Key</h3>
+    <h5><i class="icon-cog"></i> API Key</h5>
     <div class="well" id="api_key_well"><%= @user.api_key %></div>
   <% end %>
 </div>

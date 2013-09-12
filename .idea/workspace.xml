@@ -2,20 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe122cc5-365b-413f-891e-d961d4a88351" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_delete_link.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_delete_link.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_feed_item.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_feed_item.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_home_admin.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_home_admin.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_home_signed_out.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_home_signed_out.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_stats.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_stats.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/stitches/_stitch.html.erb" afterPath="$PROJECT_DIR$/app/views/stitches/_stitch.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_stitch_form.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_stitch_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/static_pages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/static_pages_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/stitches_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/stitches_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/stitches_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/stitches_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stitch_api.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378836548193" ignored="false" />
+    <file path="/Dummy.txt" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378923036677" ignored="false" />
     <file path="/README.rdoc" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378400966381" ignored="false" />
     <file path="/database.yml" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378402528053" ignored="false" />
     <file path="/routes.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378754769441" ignored="false" />
@@ -25,9 +28,9 @@
     <file path="/Guardfile" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378411442967" ignored="false" />
     <file path="/.rspec" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378411320169" ignored="false" />
     <file path="/application_helper.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378411609280" ignored="false" />
-    <file path="/custom.css.scss" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378843521455" ignored="false" />
+    <file path="/custom.css.scss" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378937321869" ignored="false" />
     <file path="/_footer.html.erb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378490978612" ignored="false" />
-    <file path="/_header.html.erb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378844255055" ignored="false" />
+    <file path="/_header.html.erb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378928374321" ignored="false" />
     <file path="/utilities.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378503688234" ignored="false" />
     <file path="/user_pages_spec.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378505456353" ignored="false" />
     <file path="/new.html.erb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378502069985" ignored="false" />
@@ -36,8 +39,8 @@
     <file path="/user_spec.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378751888290" ignored="false" />
     <file path="/20130906190046_add_index_to_users_email.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378494150375" ignored="false" />
     <file path="/Ruby Console" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378496596668" ignored="false" />
-    <file path="/show.html.erb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378510476346" ignored="false" />
-    <file path="/users_controller.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378504829108" ignored="false" />
+    <file path="/show.html.erb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378943624824" ignored="false" />
+    <file path="/users_controller.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378940154929" ignored="false" />
     <file path="/application_controller.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378499541680" ignored="false" />
     <file path="/static_pages_controller.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378848673230" ignored="false" />
     <file path="/factories.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378750622009" ignored="false" />
@@ -49,23 +52,25 @@
     <file path="/sessions_controller.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378502208337" ignored="false" />
     <file path="/20130906211857_add_remember_token_to_users.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378502372429" ignored="false" />
     <file path="/20130906212040_add_index_to_users_username.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378502449887" ignored="false" />
-    <file path="/_stats.html.erb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378841736424" ignored="false" />
+    <file path="/_stats.html.erb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378928687176" ignored="false" />
     <file path="/sample_data.rake" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378762774173" ignored="false" />
     <file path="/20130906215634_add_admin_to_users.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378504607834" ignored="false" />
     <file path="/20130909175742_create_stitches.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378749541255" ignored="false" />
     <file path="/stitch_spec.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378752374198" ignored="false" />
     <file path="/stitch.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378752415420" ignored="false" />
-    <file path="/stitches_controller.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378764097666" ignored="false" />
-    <file path="/_stitch.html.erb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378755556317" ignored="false" />
-    <file path="/_home_admin.html.erb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378848294913" ignored="false" />
+    <file path="/stitches_controller.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378929668188" ignored="false" />
+    <file path="/_stitch.html.erb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378943770158" ignored="false" />
+    <file path="/_home_admin.html.erb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378928757955" ignored="false" />
     <file path="/_home_signed_out.html.erb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378843276357" ignored="false" />
     <file path="/_feed.html.erb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378761592690" ignored="false" />
-    <file path="/_feed_item.html.erb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378838549956" ignored="false" />
+    <file path="/_feed_item.html.erb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378937412310" ignored="false" />
     <file path="/_user_info.html.erb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378761749898" ignored="false" />
-    <file path="/_stitch_form.html.erb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378841608752" ignored="false" />
-    <file path="/_delete_link.html.erb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378763038221" ignored="false" />
+    <file path="/_stitch_form.html.erb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378928514430" ignored="false" />
+    <file path="/_delete_link.html.erb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378934172260" ignored="false" />
     <file path="/fragment.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378849274576" ignored="false" />
-    <file path="/stitches_helper.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378849516905" ignored="false" />
+    <file path="/stitches_helper.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378937888889" ignored="false" />
+    <file path="/_update_link.html.erb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378937167171" ignored="false" />
+    <file path="/_images.html.erb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378943428979" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +94,80 @@
     <favorites_list name="stitch_api" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="custom.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="259" column="17" selection-start="3575" selection-end="3575" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stitches_helper.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/helpers/stitches_helper.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="59" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="15" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="572" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/stitches/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="31" selection-start="350" selection-end="350" vertical-scroll-proportion="0.35472974">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_images.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/stitches/_images.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="9" selection-start="130" selection-end="130" vertical-scroll-proportion="-3.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_stitch.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/stitches/_stitch.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="6" selection-start="480" selection-end="480" vertical-scroll-proportion="-8.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stitches_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/stitches_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="20" selection-start="909" selection-end="909" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -107,22 +185,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/shared/_feed.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/shared/_user_info.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/views/shared/_delete_link.html.erb" />
-        <option value="$PROJECT_DIR$/lib/tasks/sample_data.rake" />
-        <option value="$PROJECT_DIR$/app/controllers/stitches_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/shared/_feed_item.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/shared/_stats.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/shared/_stitch_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/shared/_home_signed_out.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/shared/_home_admin.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/static_pages_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_stitch_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_stats.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_delete_link.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_update_link.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/shared/_feed_item.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/stitches_helper.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/stitches_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/stitches/_images.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/stitches/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/stitches/_stitch.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_home_admin.html.erb" />
       </list>
     </option>
   </component>
@@ -165,6 +243,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -183,9 +262,178 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stitch_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stitch_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stitch_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stitch_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stitches" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stitch_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stitch_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stitch_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stitch_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stitch_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stitch_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stitch_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stitch_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stitch_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stitch_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stitch_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stitch_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stitch_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stitch_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -193,11 +441,11 @@
     <property name="Database.TableEditor.Splitter" value="0.9" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Rails.Development: stitch_api">
     <configuration default="false" name="Rails console: stitch_api" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
@@ -539,13 +787,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="22" width="1900" height="1087" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21790724" sideWeight="0.672379" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2729234" sideWeight="0.672379" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27615964" sideWeight="0.672379" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39919356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -624,16 +872,18 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/users/_fields.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="26" selection-start="57" selection-end="103" vertical-scroll-proportion="0.07601351">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.19318181">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/images/rails.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/app/views/users/_user.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
@@ -643,93 +893,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/stitches_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="47" selection-start="331" selection-end="331" vertical-scroll-proportion="0.24350649">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="34" selection-start="368" selection-end="368" vertical-scroll-proportion="0.26785713">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="5" selection-start="1356" selection-end="1356" vertical-scroll-proportion="0.43993506">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/stitches_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="34" selection-start="181" selection-end="181" vertical-scroll-proportion="0.17045455">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_home_admin.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="78" selection-start="355" selection-end="355" vertical-scroll-proportion="0.3293919">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_feed.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/stitch.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_stats.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_user_info.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="66" selection-start="182" selection-end="182" vertical-scroll-proportion="0.10135135">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/stitches_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="52" selection-start="150" selection-end="150" vertical-scroll-proportion="0.07601351">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_home_signed_out.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="75" selection-start="532" selection-end="532" vertical-scroll-proportion="0.29268292">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_stitch_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="24" selection-start="420" selection-end="420" vertical-scroll-proportion="0.24390244">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/static_pages_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="47" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="28" selection-start="1309" selection-end="1309" vertical-scroll-proportion="0.600939">
+        <state line="43" column="20" selection-start="909" selection-end="909" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_feed_item.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="60" selection-start="405" selection-end="405" vertical-scroll-proportion="0.2195122">
+        <state line="0" column="0" selection-start="0" selection-end="1241" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/stitches/_images.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="9" selection-start="130" selection-end="130" vertical-scroll-proportion="-3.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/stitches/_stitch.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="6" selection-start="480" selection-end="480" vertical-scroll-proportion="-8.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_stats.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_home_admin.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="14" selection-start="109" selection-end="109" vertical-scroll-proportion="0.10135135">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="259" column="17" selection-start="3575" selection-end="3575" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/stitches_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="59" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="15" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="572" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/stitches/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="31" selection-start="350" selection-end="350" vertical-scroll-proportion="0.35472974">
           <folding />
         </state>
       </provider>

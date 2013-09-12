@@ -4,14 +4,11 @@
       <%= render 'shared/user_info' %>
     </section>
     <section>
-      <%= render 'shared/stats' %>
-    </section>
-    <section>
       <%= render 'shared/stitch_form' %>
     </section>
   </aside>
   <div class="span8">
-    <h3>Stitch Feed <span class="badge badge-info"><%= Stitch.count_unfinished %></span></h3>
+    <h5><i class="icon-tasks"></i> Stitch Feed <span class="badge badge-info"><%= Stitch.count_unfinished %></span></h5>
     <%= render 'shared/feed' %>
   </div>
 </div>

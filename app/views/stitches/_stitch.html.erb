@@ -1,9 +1,27 @@
-<li>
-  <span class="content"><%= stitch.description %></span>
-  <span class="timestamp">
-    Posted <%= time_ago_in_words(stitch.created_at) %> ago.
-  </span>
-  <% if current_user?(stitch.user) %>
-      <%= render 'shared/delete_link', feed_item: stitch %>
-  <% end %>
-</li>
+<table class="table table-bordered table-condensed">
+<tbody>
+<tr class="feed_bottom_row">
+  <td>
+      <span class="update">
+        <% if current_user?(@stitch.user) || current_user.admin? %>
+              <%= render 'shared/update_link', feed_item: @stitch %>
+          <% end %>
+      </span>
+  </td>
+  <td>
+      <span class="timestamp">
+        Posted <%= time_ago_in_words(@stitch.created_at) %> ago by <%= link_to @stitch.user.username, @stitch.user %>
+      </span>
+      <%= get_status(@stitch.rejected, @stitch.file_url) %>
+  </td>
+</tr>
+<tr>
+  <td>Description</td>
+  <td><em><%= @stitch.description %></em></td>
+</tr>
+<tr>
+  <td>Notes</td>
+  <td><%= wrap(@stitch.notes) %></td>
+</tr>
+</tbody>
+</table>

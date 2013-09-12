@@ -4,6 +4,7 @@
 
 $grayMediumLight: #eaeaea;
 $grayMediumDark: #757575;
+$grayVeryLight: #f5f5f5;
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -238,7 +239,7 @@ input {
 
   li {
     padding: 10px 0;
-    border-top: 1px solid #e8e8e8
+    //border-top: 1px solid #e8e8e8
   }
 }
 
@@ -250,6 +251,25 @@ input {
   color: $grayLight
 }
 
+.delete {
+  float: right;
+  padding-right: 10px;
+}
+
+.update {
+  padding-left: 5px;
+}
+
+.stitch_status {
+  padding-top: 100px;
+}
+
+.label {
+  float: right;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .gravatar {
   float: left;
   margin-right: 10px;
@@ -259,6 +279,12 @@ aside {
   textarea {
     height: 100px;
     margin-bottom: 5px;
+  }
+}
+
+table {
+  .feed_bottom_row {
+    background-color: $grayVeryLight;
   }
 }
 
