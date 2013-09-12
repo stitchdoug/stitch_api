@@ -1,0 +1,14 @@
+<% provide(:title, 'Edit Stitch') %>
+<h1>Update <em>"<%= get_name(@stitch.name) %>"</em></h1>
+
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@stitch) do |f| %>
+
+        <%= render 'fields', f: f %>
+        <%= f.submit "Save changes", class: "btn btn-large btn-primary" %>
+
+    <% end %>
+
+  </div>
+</div>

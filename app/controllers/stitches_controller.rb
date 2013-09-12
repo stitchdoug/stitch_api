@@ -1,7 +1,7 @@
 class StitchesController < ApplicationController
   #before_filter :signed_in_user, only: [:create, :destroy]
   #before_filter :api_auth, only: [:create, :destroy]
-  before_filter :correct_user, only: :destroy
+  before_filter :correct_user, only: [:edit, :update, :destroy]
 
   def index
     @stitches = Stitch.paginate(page: params[:page])
@@ -48,7 +48,8 @@ class StitchesController < ApplicationController
   private
 
   def correct_user
-    # Admin should be able to delete all Stitches. Regular users should not
+    # Admin should be able to update and delete all Stitches. Regular users should only be able
+    # to affect their own
 
     if current_user.admin?
       @stitch = Stitch.find_by_id(params[:id])

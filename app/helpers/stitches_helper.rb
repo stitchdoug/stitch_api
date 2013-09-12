@@ -5,7 +5,7 @@ module StitchesHelper
   end
 
   def count_unfinished
-    Stitch.where("file_url is NULL and rejected is NULL").count
+    Stitch.where("file_url = '' and rejected = false").count
   end
 
   def get_name(name)
@@ -17,9 +17,9 @@ module StitchesHelper
     # Generate a <span> showing a status label
     if rejected == true
       content_tag(:span, "Rejected", :class => "label label-important")
-    elsif rejected != true && file_url != nil
+    elsif rejected != true && file_url != ""
              content_tag(:span, "Complete", :class => "label label-success")
-    elsif rejected == nil && file_url == nil
+    elsif rejected == false && file_url == ""
         content_tag(:span, "Pending", :class => "label")
     end
   end

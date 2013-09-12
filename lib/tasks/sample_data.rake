@@ -31,7 +31,7 @@ end
 def make_stitches
   users = User.all(limit: 6)
   5.times do
-    name = Faker::Lorem.words(3)
+    name = Faker::Lorem.sentence(2)
     description = Faker::Lorem.sentence(3)
     notes = Faker::Lorem.sentence(5)
     users.each { | user| user.stitches.create!(name: name, description: description, notes: notes) }

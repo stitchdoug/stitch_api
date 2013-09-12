@@ -11,17 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130909175742) do
+ActiveRecord::Schema.define(:version => 20130912192440) do
 
   create_table "stitches", :force => true do |t|
-    t.string   "name"
-    t.string   "description"
+    t.string   "name",        :default => ""
+    t.string   "description", :default => ""
     t.integer  "user_id"
-    t.text     "notes"
-    t.boolean  "rejected"
-    t.string   "file_url"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.text     "notes",       :default => ""
+    t.boolean  "rejected",    :default => false
+    t.string   "file_url",    :default => ""
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
   end
 
   add_index "stitches", ["user_id", "created_at"], :name => "index_stitches_on_user_id_and_created_at"

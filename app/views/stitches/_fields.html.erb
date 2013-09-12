@@ -1,0 +1,14 @@
+<%= render 'shared/error_messages', object: f.object %>
+
+<label class="checkbox">
+  <%= f.check_box :rejected %> Rejected?
+</label>
+
+<%= f.text_field :name, placeholder: "Name" %>
+<div class="field">
+  <%= f.text_area :description, rows: 5, placeholder: "Description (external)" %>
+</div>
+<div class="field">
+  <%= f.text_area :notes, rows: 5, placeholder: "Notes (internal)" %>
+</div>
+<%= f.text_field :file_url, placeholder: "Video file URL" %>
