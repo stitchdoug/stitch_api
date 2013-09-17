@@ -4,6 +4,7 @@ StitchApi::Application.routes.draw do
   resources :stitches do
     resources :images, only: [:create, :destroy]
   end
+  resources :videos
 
   # root index
   root to: 'static_pages#home'
@@ -16,6 +17,9 @@ StitchApi::Application.routes.draw do
   match '/help',     to: 'static_pages#help'
   match '/about',    to: 'static_pages#about'
   match '/contact',  to: 'static_pages#contact'
+
+  # video uploads
+  match '/panda/authorize_upload', to: 'panda#authorize_upload'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
