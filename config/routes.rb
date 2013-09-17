@@ -1,7 +1,9 @@
 StitchApi::Application.routes.draw do
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
-  resources :stitches
+  resources :stitches do
+    resources :images, only: [:create, :destroy]
+  end
 
   # root index
   root to: 'static_pages#home'

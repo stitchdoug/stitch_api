@@ -1,0 +1,11 @@
+<div class="stitch_thumbnail">
+<%= link_to(image_tag(image.url, width: '120', alt: "Stitch Thumbnail", class: "img-polaroid"), image.url) %>
+
+  <% if current_user.admin? || current_user?(@stitch.user) %>
+      <%= link_to(stitch_image_path(@stitch, image), method: :delete,
+                data: { confirm: "You sure?"},
+                title: image.url) do %>
+        <i class="icon-minus-sign"></i> remove
+      <% end %>
+  <% end %>
+</div>

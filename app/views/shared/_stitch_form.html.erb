@@ -8,5 +8,12 @@
     <div class="field">
       <%= f.text_area :notes, placeholder: "Notes (internal)" %>
     </div>
+
+    <% n = 0 %>
+    <% @images.each do |image| %>
+        <%= text_field_tag "image[][url]", nil, placeholder: "Image URL...", id: "image-#{n}" %>
+        <% n = n+1 %>
+    <% end %>
+
     <%= f.submit "Create", class: "btn btn-large btn-primary" %>
 <% end %>

@@ -292,6 +292,23 @@ table {
   }
 }
 
+.stitch_thumbnail {
+  width: 120px;
+  min-height: 120px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
+  text-align: center;
+  float: left;
+}
+
+#attach_image {
+  background-color: $grayVeryLight;
+  td {
+    padding-top: 20px;
+  }
+}
+
 
 /* miscellaneous */
 

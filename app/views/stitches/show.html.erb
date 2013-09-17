@@ -12,10 +12,10 @@
     <h2><%= get_name(@stitch.name) %></h2>
     <%= render 'stitch' %>
 
-    <% if @stitch.file_url != '' %>
-      <%= render 'video' %>
-    <% end %>
-
     <%= render 'images' %>
+
+    <% if @stitch.file_url != '' %>
+        <%= render 'video' %>
+    <% end %>
   </div>
 </div>

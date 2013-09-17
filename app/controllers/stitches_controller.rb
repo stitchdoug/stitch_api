@@ -1,5 +1,5 @@
 class StitchesController < ApplicationController
-  #before_filter :signed_in_user, only: [:create, :destroy]
+  before_filter :signed_in_user, only: [:show, :create, :destroy]
   #before_filter :api_auth, only: [:create, :destroy]
   before_filter :correct_user, only: [:edit, :update, :destroy]
 
@@ -9,6 +9,22 @@ class StitchesController < ApplicationController
 
   def show
     @stitch = Stitch.find(params[:id])
+
+    # Find all associated images, if any
+    if Stitch.find(params[:id]).images.any?
+      @images = Stitch.find(params[:id]).images.all
+    end
+
+    # Set up for image creation
+    if signed_in? && current_user.admin?
+
+      # Admin can attach images to any Stitch
+      @image = Stitch.find(params[:id]).images.build
+    elsif current_user?(Stitch.find(params[:id]).user)
+
+      # Not admin, but this Stitch belongs to the logged in user
+      @image = current_user.stitches.find(params[:id]).images.build
+    end
   end
 
   def new
@@ -20,6 +36,17 @@ class StitchesController < ApplicationController
     @stitch = current_user.stitches.build(params[:stitch])
     if @stitch.save
       flash[:success] = "Stitch created!"
+
+      # Check for attached image links
+      @images = params[:image]
+      @images.each do |image|
+        if image != ''
+          image = @stitch.images.build(url: image[:url])
+          image.save
+        end
+      end
+
+      # Send to home (where the feed should be, for Admins)
       redirect_to root_url
     else
       @feed_items = []

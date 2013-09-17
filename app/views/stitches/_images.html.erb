@@ -5,5 +5,30 @@
   </tr>
   </thead>
   <tbody>
+  <% if @images %>
+  <tr>
+    <td>
+      <%= render partial: 'images/image', collection: @images %>
+    </td>
+  </tr>
+  <% else %>
+  <tr>
+    <td>
+      <em>No images associated with this Stitch.</em>
+    </td>
+  </tr>
+  <% end %>
+  <% if @image %>
+  <tr id="attach_image">
+    <td>
+      <%= form_for([@stitch, @image]) do |f| %>
+
+          <%= render 'images/fields', f: f %>
+          <%= f.submit "Attach image", class: "btn" %>
+
+      <% end %>
+    </td>
+  </tr>
+  <% end %>
   </tbody>
 </table>

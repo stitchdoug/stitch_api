@@ -11,7 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130912192440) do
+ActiveRecord::Schema.define(:version => 20130916165116) do
+
+  create_table "images", :force => true do |t|
+    t.string   "url"
+    t.integer  "stitch_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "images", ["stitch_id", "created_at"], :name => "index_images_on_stitch_id_and_created_at"
 
   create_table "stitches", :force => true do |t|
     t.string   "name",        :default => ""

@@ -17,7 +17,7 @@
       <tr class="feed_bottom_row">
         <td>
           <span class="update">
-            <% if current_user?(feed_item.user) || current_user.admin? %>
+            <% if current_user?(feed_item.user) || is_admin? %>
                   <%= render 'shared/update_link', feed_item: feed_item %>
               <% end %>
           </span>
@@ -27,7 +27,7 @@
             Posted <%= time_ago_in_words(feed_item.created_at) %> ago by <%= link_to feed_item.user.username, feed_item.user %>
           </span>
           <span class="delete">
-              <% if current_user?(feed_item.user) || current_user.admin? %>
+              <% if current_user?(feed_item.user) || is_admin? %>
                   <%= render 'shared/delete_link', feed_item: feed_item %>
               <% end %>
           </span>
