@@ -1,1 +1,1 @@
-Panda.configure(ENV['https://52d4e21149e84899710f:228ebda540e86e862f66@api.pandastream.com/96348f2c8ffdceaca73dd9f5fa515d76'])
+Panda.configure(ENV['PANDASTREAM_URL'])
