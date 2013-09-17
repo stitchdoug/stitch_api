@@ -34,4 +34,7 @@ StitchApi::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # PandaStream URL (for Heroku add-on)
+  ENV['PANDASTREAM_URL'] = "https://52d4e21149e84899710f:228ebda540e86e862f66@api.pandastream.com/96348f2c8ffdceaca73dd9f5fa515d76"
 end
