@@ -29,9 +29,11 @@ class VideosController < ApplicationController
   end
 
   def destroy
-    @video.destroy
-    flash[:success] = "Video deleted"
-    redirect_to stitch_path(params[:stitch_id])
+    if @video.panda_video.delete
+      @video.destroy
+      flash[:success] = "Video deleted"
+      redirect_to stitch_path(params[:stitch_id])
+    end
   end
 
   private

@@ -13,7 +13,7 @@ class PandaController < ApplicationController
     upload = Panda.post('/videos/upload.json', {
         file_name: upload_payload['filename'],
         file_size: upload_payload['filesize'],
-        profiles: "h264",
+        profiles: "h264,h264.hi,webm,webm.hi,ogg,ogg.hi",
     })
 
     render :json => {:upload_url => upload['location']}
