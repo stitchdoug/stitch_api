@@ -1,10 +1,5 @@
-<table class="table table-bordered table-condensed">
-  <thead>
-  <tr class="top_row">
-    <th colspan="2">Video File</th>
-  </tr>
-  </thead>
-  <tbody>
-    <td><%= @stitch.file_url %></td>
-  </tbody>
-</table>
+<% if @video.id? %>
+    <%= render 'shared/video_display' %>
+<% else %>
+    <%= render 'shared/video_upload' %>
+<% end %>

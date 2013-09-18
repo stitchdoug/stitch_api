@@ -1,0 +1,68 @@
+<table class="table table-bordered table-condensed">
+  <thead>
+  <tr class="top_row">
+    <th>Video File</th>
+  </tr>
+  </thead>
+  <tbody>
+    <% if @h264_encoding.success? %>
+      <tr>
+        <td class="video_display">
+         <!-- HTML5 player -->
+         <video id="movie" width="560" preload="none"
+               poster="<%= @h264_encoding.screenshots.first %>" controls>
+          <source src="<%= @h264_encoding.url %>" type="video/mp4">
+         </video>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <% if current_user.admin? || current_user?(@stitch.user) %>
+              <%= link_to(stitch_video_path(@stitch, @video), method: :delete,
+                          data: { confirm: "You sure?"},
+                          title: @original_video.url) do %>
+                  <i class="icon-remove-sign"></i> delete
+              <% end %>
+          <% end %>
+        </td>
+      </tr>
+    <% else %>
+      <tr>
+        <td>
+         <div class='progress progress-striped progress-success'>
+           <span id="progress-bar" class='bar' style="width: <%= @h264_encoding.encoding_progress.to_i %>%"><%= @h264_encoding.encoding_progress %> %</span>
+         </div>
+
+         The video is still processing, refresh the page in a few seconds.
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<table class="table table-bordered table-condensed">
+  <thead>
+  <tr class="top_row">
+    <th colspan="2">Video Info</th>
+  </tr>
+  </thead>
+    <tr>
+      <td><strong>Orig:</strong></td>
+      <td><%= @original_video.url %></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <%= h @original_video.inspect %>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>h264:</strong></td>
+      <td><%= @h264_encoding.url %></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <%= h @h264_encoding.inspect %>
+      </td>
+    </tr>
+  </tbody>
+</table>

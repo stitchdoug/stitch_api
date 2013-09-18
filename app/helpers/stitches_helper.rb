@@ -5,7 +5,7 @@ module StitchesHelper
   end
 
   def count_unfinished
-    Stitch.where("file_url = '' and rejected = false").count
+    Stitch.where("rejected = false").count - Video.all.count
   end
 
   def get_name(name)
@@ -13,13 +13,13 @@ module StitchesHelper
     name != "" ? name : "Untitled"
   end
 
-  def get_status(rejected = nil, file_url = nil)
+  def get_status(stitch)
     # Generate a <span> showing a status label
-    if rejected == true
+    if stitch.rejected
       content_tag(:span, "Rejected", :class => "label label-important")
-    elsif rejected != true && file_url != ""
+    elsif stitch.rejected == false && stitch.video != nil
              content_tag(:span, "Complete", :class => "label label-success")
-    elsif rejected == false && file_url == ""
+    elsif stitch.rejected == false && stitch.video == nil
         content_tag(:span, "Pending", :class => "label")
     end
   end

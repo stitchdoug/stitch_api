@@ -12,16 +12,16 @@
       <span class="timestamp">
         Posted <%= time_ago_in_words(@stitch.created_at) %> ago by <%= link_to @stitch.user.username, @stitch.user %>
       </span>
-      <%= get_status(@stitch.rejected, @stitch.file_url) %>
+      <%= get_status(@stitch) %>
   </td>
 </tr>
 <tr>
   <td>Description</td>
-  <td><em><%= @stitch.description %></em></td>
+  <td><em><%= simple_format @stitch.description %></em></td>
 </tr>
 <tr>
   <td>Notes</td>
-  <td><%= wrap(@stitch.notes) %></td>
+  <td><%= simple_format @stitch.notes %></td>
 </tr>
 </tbody>
 </table>

@@ -4,26 +4,32 @@ class StitchesController < ApplicationController
   before_filter :correct_user, only: [:edit, :update, :destroy]
 
   def index
-    @stitches = Stitch.paginate(page: params[:page])
+    #@stitches = Stitch.paginate(page: params[:page])
+    redirect_to root_path
   end
 
   def show
     @stitch = Stitch.find(params[:id])
 
     # Find all associated images, if any
-    if Stitch.find(params[:id]).images.any?
-      @images = Stitch.find(params[:id]).images.all
+    if @stitch.images.any?
+      @images = @stitch.images.all
     end
 
-    # Set up for image creation
-    if signed_in? && current_user.admin?
+    # Set up for image attachment
+    if is_admin? || current_user?(@stitch.user)
+      @image = @stitch.images.build
+    end
 
-      # Admin can attach images to any Stitch
-      @image = Stitch.find(params[:id]).images.build
-    elsif current_user?(Stitch.find(params[:id]).user)
-
-      # Not admin, but this Stitch belongs to the logged in user
-      @image = current_user.stitches.find(params[:id]).images.build
+    # Set up for video upload
+    if @stitch.video
+      @video = @stitch.video
+      @original_video = @video.panda_video
+      @h264_encoding = @original_video.encodings["h264"]
+    else
+      if is_admin? || current_user?(@stitch.user)
+        @video = Video.new
+      end
     end
   end
 

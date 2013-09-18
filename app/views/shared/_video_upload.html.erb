@@ -1,27 +1,21 @@
-<%= form_for @video do |f| %>
-  <fieldset>
-    <legend>Upload a new video</legend>
+<%= form_for([@stitch, @video]) do |f| %>
+    <fieldset>
+      <legend>Upload Video</legend>
 
-    <label>Title</label>
+      <span class="help-block">Upload will start immediately after select</span>
 
-    <input type="text" name='video[title]' placeholder="Give a title">
+      <input type="hidden" name="video[panda_video_id]" id="panda_video_id" />
 
-    <span class="help-block">Upload will start immediately after select</span>
+      <div class='progress progress-striped progress-info active'>
+        <span id="progress-bar" class='bar'></span>
+      </div>
 
-    <br/>
+      <div class='btn-toolbar'>
+        <div id='browse-files' class='btn btn-primary'><span>Choose file</span></div>
+        <button id='cancel-button' class='btn btn-danger'>Cancel</button>
+      </div>
 
-    <input type="hidden" name="video[panda_video_id]" id="panda_video_id" />
-
-    <div class='progress progress-striped progress-info active'>
-      <span id="progress-bar" class='bar'></span>
-    </div>
-
-    <div class='btn-toolbar'>
-      <div id='browse-files' class='btn btn-primary'><span>Choose file</span></div>
-      <button id='cancel-button' class='btn btn-danger'>Cancel</button>
-    </div>
-
-  </fieldset>
+    </fieldset>
 
 <% end %>
 

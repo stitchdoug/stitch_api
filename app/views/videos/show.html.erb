@@ -1,9 +1,50 @@
 <h2><%= @video.title %></h2>
-<p><%= h @video.panda_video.inspect %></p>
 
-<% if @video.panda_video.status == "success" %>
-    <video id="movie" width="<%= @h264_encoding.width %>" height="<%= @h264_encoding.height %>" preload="none"
-           poster="<%= @h264_encoding.screenshots.first %>" controls>
-      <source src="<%= @h264_encoding.url %>" type="video/mp4">
-    </video>
-<% end %>
+<p>Here's the raw Panda information:</p>
+
+<!--<div class='span8'> -->
+
+  <section>
+    <h4>Video Input: </h4>
+    <pre><%= h @original_video.inspect %></pre>
+    <p>Original File: <%= h @original_video.url %></p>
+  </section>
+
+  <section>
+    <h4>Video Output H264:</h4>
+    <pre><%= h @h264_encoding.inspect %></pre>
+  </section>
+
+  <% if @h264_encoding.success? %>
+
+      <h3>HTML5 Player</h3>
+
+      <!-- HTML5 player -->
+      <video id="movie" width="<%= @h264_encoding.width %>" height="<%= @h264_encoding.height %>" preload="none"
+             poster="<%= @h264_encoding.screenshots.first %>" controls>
+        <source src="<%= @h264_encoding.url %>" type="video/mp4">
+      </video>
+
+      <h3>Thumbnails</h3>
+
+      <ul class="thumbnails">
+        <% @h264_encoding.screenshots.each do |src| %>
+            <li class="span3">
+              <a class="thumbnail" href="#">
+                <img src="<%= src %>"
+                     style="width: <%= @h264_encoding.width %>; height: <%= @h264_encoding.height %>">
+              </a>
+            </li>
+        <% end %>
+      </ul>
+
+  <% else %>
+
+      <div class='progress progress-striped progress-success'>
+        <span id="progress-bar" class='bar' style="width: <%= @h264_encoding.encoding_progress.to_i %>%"><%= @h264_encoding.encoding_progress %> %</span>
+      </div>
+
+      The video is still processing, refresh the page in a few seconds.
+  <% end %>
+
+<!--</div> -->

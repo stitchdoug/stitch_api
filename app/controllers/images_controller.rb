@@ -31,7 +31,7 @@ class ImagesController < ApplicationController
     # to affect their own
 
     if current_user.admin?
-      @image = Image.find_by_id(params[:id])
+      @image = Image.find(params[:id])
     else
       @image = current_user.stitches.find_by_id(params[:stitch_id]).images.find_by_id(params[:id])
     end
