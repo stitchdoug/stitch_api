@@ -66,10 +66,12 @@
     <orderEntry type="library" scope="PROVIDED" name="multi_test (v0.0.2, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multipart-post (v1.2.0, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.6.0, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="oj (v2.1.4, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="panda (v1.6.0, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pg (v0.12.2, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="polyglot (v0.3.3, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pry (v0.9.12.2, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rabl (v0.8.6, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v1.4.5, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-cache (v1.2, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-ssl (v1.3.3, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />

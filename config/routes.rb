@@ -3,7 +3,7 @@ StitchApi::Application.routes.draw do
   resources :sessions, only: [:new, :create, :destroy]
   resources :stitches do
     resources :images, only: [:create, :destroy]
-    resources :videos, only: [:create, :destroy]
+    resources :videos, only: [:show, :create, :destroy]
   end
 
   # root index

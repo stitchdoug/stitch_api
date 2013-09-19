@@ -8,6 +8,8 @@ gem 'faker', '1.0.1'
 gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
 gem 'panda', '~> 1.6.0'
+gem 'rabl', '0.8.6'
+gem 'oj', '2.1.4'
 
 group :development, :test do
   gem 'rspec-rails', '2.11.0'

@@ -31,6 +31,8 @@ class StitchesController < ApplicationController
         @video = Video.new
       end
     end
+
+    @myHash = {one: 1, two: 2, three: 3, four: 4}
   end
 
   def new

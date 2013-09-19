@@ -3,11 +3,11 @@ class VideosController < ApplicationController
   #before_filter :api_auth, only: [:create, :destroy]
   before_filter :correct_video, only: [:destroy]
 
-  #def show
-  #  @video = Video.find(params[:id])
-  #  @original_video = @video.panda_video
-  #  @h264_encoding = @original_video.encodings["h264"]
-  #end
+  def show
+    @video = Video.find(params[:id])
+    @original_video = @video.panda_video
+    @h264_encoding = @original_video.encodings["h264"]
+  end
 
   #def new
   #  @video = Video.new
@@ -23,9 +23,6 @@ class VideosController < ApplicationController
     else
       redirect_to stitch_path(params[:stitch_id])
     end
-
-    #@video = Video.create!(params[:video])
-    #redirect_to :action => :show, :id => @video.id
   end
 
   def destroy
