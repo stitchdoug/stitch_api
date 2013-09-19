@@ -1,6 +1,6 @@
 class StitchesController < ApplicationController
   before_filter :signed_in_user, only: [:show, :create, :destroy]
-  #before_filter :api_auth, only: [:create, :destroy]
+  #before_filter :api_auth, only: [:show, :create, :destroy]
   before_filter :correct_user, only: [:edit, :update, :destroy]
 
   def index
@@ -31,8 +31,6 @@ class StitchesController < ApplicationController
         @video = Video.new
       end
     end
-
-    @myHash = {one: 1, two: 2, three: 3, four: 4}
   end
 
   def new

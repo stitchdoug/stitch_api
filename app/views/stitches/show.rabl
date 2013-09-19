@@ -1,15 +1,19 @@
 object @stitch
   attributes :name, :description, :rejected
 
-  child @images do
-    attributes :id, :url
+  child :user do
+    attributes :id, :name, :username
   end
 
-  child @video do
-    attribute :created_at
-    attribute :panda_video_id => :id
-  end
+  #child @images do
+  #  attributes :id, :url
+  #end
 
-  child @original_video do
-    attributes :id, :url
+  #child @video do
+  #  attribute :created_at
+  #  attribute :panda_video_id => :id
+  #end
+
+  child @original_video => :video do
+    extends "videos/show"
   end
