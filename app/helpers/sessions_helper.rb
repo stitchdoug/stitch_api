@@ -22,10 +22,14 @@ module SessionsHelper
   end
 
   def signed_in_user
-    #unless signed_in?
-    #  store_location
-    #  redirect_to signin_url, notice: "Please sign in."
-    #end
+    if !params[:api_key].nil?
+      self.sign_in_api_user(params[:api_key])
+    end
+
+    unless signed_in?
+      store_location
+      redirect_to signin_url, notice: "Please sign in."
+    end
   end
 
   def sign_out
@@ -44,5 +48,12 @@ module SessionsHelper
 
   def is_admin?
     self.signed_in? && current_user.admin?
+  end
+
+  def sign_in_api_user(api_key)
+    user = User.find_by_api_key(api_key)
+    if !user.nil?
+      self.sign_in(user)
+    end
   end
 end

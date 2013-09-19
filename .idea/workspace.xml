@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fe122cc5-365b-413f-891e-d961d4a88351" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/sessions_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/sessions_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/stitches_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/stitches_controller.rb" />
     </list>
     <ignored path="stitch_api.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,7 +47,7 @@
     <file path="/20130909175742_create_stitches.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1379013473049" ignored="false" />
     <file path="/stitch_spec.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378752374198" ignored="false" />
     <file path="/stitch.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1379519326401" ignored="false" />
-    <file path="/stitches_controller.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1379618571270" ignored="false" />
+    <file path="/stitches_controller.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1379632975825" ignored="false" />
     <file path="/_stitch.html.erb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1379531323759" ignored="false" />
     <file path="/_home_admin.html.erb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378928757955" ignored="false" />
     <file path="/_home_signed_out.html.erb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378843276357" ignored="false" />
@@ -68,7 +68,7 @@
     <file path="/images_controller.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1379363884463" ignored="false" />
     <file path="/_image.html.erb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1379367580242" ignored="false" />
     <file path="/images_helper.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1379369812046" ignored="false" />
-    <file path="/sessions_helper.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1379631739929" ignored="false" />
+    <file path="/sessions_helper.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1379632804341" ignored="false" />
     <file path="/panda.yml" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1379445676387" ignored="false" />
     <file path="/video.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1379519295365" ignored="false" />
     <file path="/videos_controller.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1379618071111" ignored="false" />
@@ -104,26 +104,7 @@
     <favorites_list name="stitch_api" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="stitches_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/stitches_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="3" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sessions_helper.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="5" selection-start="533" selection-end="533" vertical-scroll-proportion="0.42012447">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -155,8 +136,8 @@
         <option value="$PROJECT_DIR$/app/controllers/videos_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/stitches/show.rabl" />
-        <option value="$PROJECT_DIR$/app/controllers/stitches_controller.rb" />
         <option value="$PROJECT_DIR$/app/helpers/sessions_helper.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/stitches_controller.rb" />
       </list>
     </option>
   </component>
@@ -668,13 +649,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="22" width="1900" height="1087" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929292" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929292" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21790724" sideWeight="0.6764113" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21790724" sideWeight="0.6018145" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973032" sideWeight="0.67373735" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3279396" sideWeight="0.6764113" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3279396" sideWeight="0.6018145" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3981855" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -823,16 +804,16 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/stitches_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="3" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
+        <state line="55" column="24" selection-start="1076" selection-end="1076" vertical-scroll-proportion="1.0790861">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/stitches_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="5" selection-start="533" selection-end="533" vertical-scroll-proportion="0.42012447">
+        <state line="92" column="5" selection-start="2179" selection-end="2179" vertical-scroll-proportion="2.4253075">
           <folding />
         </state>
       </provider>

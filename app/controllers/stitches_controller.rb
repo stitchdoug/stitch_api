@@ -91,11 +91,4 @@ class StitchesController < ApplicationController
     end
     redirect_to root_url if @stitch.nil?
   end
-
-  def api_auth
-    unless params[:api_key] == current_user.api_key
-      store_location
-      redirect_to signin_url, notice: "Please sign in."
-    end
-  end
 end
