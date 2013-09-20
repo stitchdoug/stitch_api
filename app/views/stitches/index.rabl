@@ -1,0 +1,2 @@
+collection @stitches
+  attributes

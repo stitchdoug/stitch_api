@@ -5,7 +5,7 @@ class StitchesController < ApplicationController
 
   def index
     #@stitches = Stitch.paginate(page: params[:page])
-    redirect_to root_path
+    redirect_to root_url
   end
 
   def show
