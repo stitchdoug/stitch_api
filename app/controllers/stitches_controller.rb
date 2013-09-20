@@ -45,15 +45,21 @@ class StitchesController < ApplicationController
 
       # Check for attached image links
       @images = params[:image]
-      @images.each do |image|
-        if image != ''
-          image = @stitch.images.build(url: image[:url])
-          image.save
+
+      if !@images.nil?
+        @images.each do |image|
+          if image != ''
+            image = @stitch.images.build(url: image[:url])
+            image.save
+          end
         end
       end
 
-      # Send to home (where the feed should be, for Admins)
-      redirect_to root_url
+      # Only redirect if this isn't an API request
+      if params[:api_key].nil?
+        # Send to home (where the feed should be, for Admins)
+        redirect_to root_url
+      end
     else
       @feed_items = []
       render 'static_pages/home'
