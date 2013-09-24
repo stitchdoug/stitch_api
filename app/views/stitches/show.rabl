@@ -1,5 +1,5 @@
 object @stitch
-  attributes :name, :description, :rejected
+  attributes :name, :description, :notes, :rejected
 
   child :user do
     attributes :id, :name, :username

@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe122cc5-365b-413f-891e-d961d4a88351" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/stitches_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/stitches_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/stitches/show.rabl" afterPath="$PROJECT_DIR$/app/views/stitches/show.rabl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stitch_api.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1380052942974" ignored="false" />
+    <file path="/Dummy.txt" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1380062569186" ignored="false" />
     <file path="/README.rdoc" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378400966381" ignored="false" />
     <file path="/database.yml" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378402528053" ignored="false" />
     <file path="/routes.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1379967366259" ignored="false" />
@@ -80,7 +80,7 @@
     <file path="/_video_display.html.erb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1379530255029" ignored="false" />
     <file path="/panda_controller.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1379952471120" ignored="false" />
     <file path="/index.rabl" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1379655381220" ignored="false" />
-    <file path="/show.rabl" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1379618410721" ignored="false" />
+    <file path="/show.rabl" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1380062596058" ignored="false" />
     <file path="/create.rabl" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1379641249001" ignored="false" />
     <file path="/update.rabl" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1380054331520" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -106,7 +106,17 @@
     <favorites_list name="stitch_api" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="show.rabl" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/stitches/show.rabl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="42" selection-start="57" selection-end="57" vertical-scroll-proportion="0.015560166">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -130,7 +140,6 @@
         <option value="$PROJECT_DIR$/app/views/users/show.rabl" />
         <option value="$PROJECT_DIR$/app/views/videos/show.rabl" />
         <option value="$PROJECT_DIR$/app/controllers/videos_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/stitches/show.rabl" />
         <option value="$PROJECT_DIR$/app/helpers/sessions_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/stitches/create.rabl" />
         <option value="$PROJECT_DIR$/app/views/stitches/index.rabl" />
@@ -140,6 +149,7 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/stitches/update.rabl" />
         <option value="$PROJECT_DIR$/app/controllers/stitches_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/stitches/show.rabl" />
       </list>
     </option>
   </component>
@@ -182,6 +192,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -257,18 +268,17 @@
         </subPane>
       </pane>
       <pane id="RailsProjectView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Database.TableEditor.Splitter" value="0.9" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="ruby.project.structure" />
     <property name="recentsLimit" value="5" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.lastSelected" value="ruby.project.structure" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -655,14 +665,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="22" width="1900" height="1087" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929292" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929292" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21790724" sideWeight="0.6018145" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973032" sideWeight="0.67373735" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2518878" sideWeight="0.6018145" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3981855" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25458467" sideWeight="0.6018145" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3981855" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32315272" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -780,37 +790,24 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/stitches/show.rabl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="58" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/stitches/create.rabl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="63" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="63" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/stitches/update.rabl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="47" selection-start="62" selection-end="62" vertical-scroll-proportion="0.02636204">
-          <folding />
-        </state>
+        <state line="1" column="47" selection-start="62" selection-end="62" vertical-scroll-proportion="0.02636204" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="0" selection-start="993" selection-end="993" vertical-scroll-proportion="1.3971881">
-          <folding />
-        </state>
+        <state line="53" column="0" selection-start="993" selection-end="993" vertical-scroll-proportion="1.3971881" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="63" selection-start="663" selection-end="663" vertical-scroll-proportion="0.5536028">
-          <folding />
-        </state>
+        <state line="21" column="63" selection-start="663" selection-end="663" vertical-scroll-proportion="0.5536028" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/stitches_controller.rb">
@@ -822,14 +819,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/stitch.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="12" selection-start="343" selection-end="343" vertical-scroll-proportion="0.26362038">
-          <folding />
-        </state>
+        <state line="10" column="12" selection-start="343" selection-end="343" vertical-scroll-proportion="0.26362038" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/panda_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="25" selection-start="596" selection-end="596" vertical-scroll-proportion="0.42179263">
+        <state line="16" column="25" selection-start="596" selection-end="596" vertical-scroll-proportion="0.42179263" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/stitches/show.rabl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="42" selection-start="57" selection-end="57" vertical-scroll-proportion="0.015560166">
           <folding />
         </state>
       </provider>
