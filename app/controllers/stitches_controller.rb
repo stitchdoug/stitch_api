@@ -1,5 +1,5 @@
 class StitchesController < ApplicationController
-  before_filter :signed_in_user, only: [:show, :create, :destroy]
+  before_filter :signed_in_user, only: [:show, :create, :update, :destroy]
   #before_filter :api_auth, only: [:show, :create, :destroy]
   before_filter :correct_user, only: [:edit, :update, :destroy]
 
@@ -21,7 +21,7 @@ class StitchesController < ApplicationController
       @image = @stitch.images.build
     end
 
-    # Set up for video upload
+    # Grab video or Set up for video upload
     if @stitch.video
       @video = @stitch.video
       @original_video = @video.panda_video
@@ -72,7 +72,11 @@ class StitchesController < ApplicationController
   def update
     if @stitch.update_attributes(params[:stitch])
       flash[:success] = "Stitch updated"
-      redirect_to @stitch
+
+      # Only redirect if this isn't an API request
+      if params[:api_key].nil?
+        redirect_to @stitch
+      end
     else
       render 'edit'
     end
