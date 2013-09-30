@@ -14,7 +14,9 @@ class PandaController < ApplicationController
         file_name: upload_payload['filename'],
         file_size: upload_payload['filesize'],
         #profiles: "h264,h264.hi,webm,webm.hi,ogg,ogg.hi",
+        #profiles: "h264,webm,ogg",
         profiles: "h264",
+        path_format: current_user.username + "/:id",
     })
 
     render :json => {:upload_url => upload['location']}
