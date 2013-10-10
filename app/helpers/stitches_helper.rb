@@ -5,7 +5,11 @@ module StitchesHelper
   end
 
   def count_unfinished
-    Stitch.where("rejected = false").count - Video.all.count
+    if Stitch.any?
+      Stitch.where("rejected = false").count - Video.all.count
+    else
+      0
+    end
   end
 
   def get_name(name)
