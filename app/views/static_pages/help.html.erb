@@ -1,2 +1,201 @@
-<h1>StaticPages#help</h1>
-<p>Find me in app/views/static_pages/help.html.erb</p>
+<div class="center hero-unit">
+  <h1>Stitch Request API</h1>
+
+  <p>
+    This API allows you to remotely request and display Stitches. Once a remote request has been made, it's
+    entered into the queue and a Stitch is returned shortly thereafter. Content On Demand!
+  </p>
+</div>
+
+<h3>HTTP API</h3>
+<p>
+  The following outlines the HTTP interface available to users. Stitches is a restful resource which handles
+  the media (or <em>Stitch</em>) request and display.
+</p>
+
+<h4>Base URL</h4>
+<p><a href="http://api.getstitch.co/stitches">http://api.getstitch.co</a></p>
+<br/>
+
+<h3>Display a Stitch</h3>
+<code>GET /stitches/:id.json</code>
+<p>
+  A json object is returned with meta data about the Stitch itself, including status. Once the request has been
+  fulfilled, the returned json object will include information about the original video file and its (up to 6 possible)
+  encodings, including low and high resolution mp4, webm, and ogg formats.
+</p>
+<br/><br/>
+
+<h4>Parameters</h4>
+<pre>
+  id: ID of the Stitch
+</pre>
+
+<h5>Example Request</h5>
+<pre>
+  GET /stitches/40.json
+</pre>
+
+<h5>Example Response</h5>
+<pre>
+  {
+    <span class="json_green">"stitch":</span>
+    {
+      <span class="json_green">"name"</span>:<span class="json_red">"Testing Stitch"</span>,
+      <span class="json_green">"description"</span>:<span class="json_red">"The description/instructions sent through the request"</span>,
+      <span class="json_green">"notes"</span>:<span class="json_red">"The notes used internally"</span>,
+      <span class="json_green">"rejected"</span>:false,
+      <span class="json_green">"user"</span>:
+      {
+        <span class="json_green">"id"</span>:1,
+        <span class="json_green">"name"</span>:<span class="json_red">"Doug Allen"</span>,
+        <span class="json_green">"username"</span>:<span class="json_red">"stitchdoug"</span>
+      },
+      <span class="json_green">"video"</span>:
+      {
+        <span class="json_green">"id"</span>:<span class="json_red">"732ba75c8f2c055a7e6f38565f6f363a"</span>,
+        <span class="json_green">"status"</span>:<span class="json_red">"success"</span>,
+        <span class="json_green">"created_at"</span>:<span class="json_red">"2013/09/30 15:38:28 +0000"</span>,
+        <span class="json_green">"url"</span>:<span class="json_red">"http://s3.amazonaws.com/stitch_api/stitchdoug/732ba75c8f2c055a7e6f38565f6f363a.mp4"</span>,
+        <span class="json_green">"mime_type"</span>:<span class="json_red">"video/mp4"</span>,
+        <span class="json_green">"duration"</span>:14014,
+        <span class="json_green">"height"</span>:240,
+        <span class="json_green">"width"</span>:300,
+        <span class="json_green">"h264"</span>:
+        {
+          <span class="json_green">"id"</span>:<span class="json_red">"ef13f2e8824e32e65792f1d0bebbc768"</span>,
+          <span class="json_green">"status"</span>:<span class="json_red">"success"</span>,
+          <span class="json_green">"created_at"</span>:<span class="json_red">"2013/09/30 15:38:28 +0000"</span>,
+          <span class="json_green">"url"</span>:<span class="json_red">"http://s3.amazonaws.com/stitch_api/stitchdoug/ef13f2e8824e32e65792f1d0bebbc768.mp4"</span>,
+          <span class="json_green">"screenshot"</span>:<span class="json_red">"http://s3.amazonaws.com/stitch_api/stitchdoug/ef13f2e8824e32e65792f1d0bebbc768_4.jpg"</span>,
+          <span class="json_green">"mime_type"</span>:<span class="json_red">"video/mp4"</span>,
+          <span class="json_green">"duration"</span>:14015,
+          <span class="json_green">"height"</span>:360,
+          <span class="json_green">"width"</span>:450
+        },
+        <span class="json_green">"h264_hi"</span>:null,
+        <span class="json_green">"ogg"</span>:
+        {
+          <span class="json_green">"id"</span>:<span class="json_red">"8c6196892cc184aa3917b8b5a248ff7d"</span>,
+          <span class="json_green">"status"</span>:<span class="json_red">"success"</span>,
+          <span class="json_green">"created_at"</span>:<span class="json_red">"2013/09/30 15:39:14 +0000"</span>,
+          <span class="json_green">"url"</span>:<span class="json_red">"http://s3.amazonaws.com/stitch_api/stitchdoug/8c6196892cc184aa3917b8b5a248ff7d.ogg"</span>,
+          <span class="json_green">"screenshot"</span>:<span class="json_red">"http://s3.amazonaws.com/stitch_api/stitchdoug/8c6196892cc184aa3917b8b5a248ff7d_4.jpg"</span>,
+          <span class="json_green">"mime_type"</span>:<span class="json_red">"video/ogg"</span>,
+          <span class="json_green">"duration"</span>:14015,
+          <span class="json_green">"height"</span>:360,
+          <span class="json_green">"width"</span>:450
+        }
+        <span class="json_green">"ogg_hi"</span>:null,
+        <span class="json_green">"webm"</span>:
+        {
+          <span class="json_green">"id"</span>:<span class="json_red">"ce918b1713610ed94c1a6f590ec94c06"</span>,
+          <span class="json_green">"status"</span>:<span class="json_red">"success"</span>,
+          <span class="json_green">"created_at"</span>:<span class="json_red">"2013/09/30 15:37:12 +0000"</span>,
+          <span class="json_green">"url"</span>:<span class="json_red">"http://s3.amazonaws.com/stitch_api/stitchdoug/ce918b1713610ed94c1a6f590ec94c06.webm"</span>,
+          <span class="json_green">"screenshot"</span>:<span class="json_red">"http://s3.amazonaws.com/stitch_api/stitchdoug/ce918b1713610ed94c1a6f590ec94c06_4.jpg"</span>,
+          <span class="json_green">"mime_type"</span>:<span class="json_red">"video/webm"</span>,
+          <span class="json_green">"duration"</span>:14015,
+          <span class="json_green">"height"</span>:360,
+          <span class="json_green">"width"</span>:450
+        }
+        <span class="json_green">"webm_hi"</span>:null
+      }
+    }
+  }
+</pre>
+<br />
+
+<h3>Request a Stitch</h3>
+<code>POST /stitches.json</code>
+<p>
+  Requesting a Stitch returns and id, meta data about the Stitch itself, including status. All fields optional, but it is
+  recommended to send as much data as possible.
+</p>
+<br/><br/>
+
+<h4>Parameters</h4>
+<em>(Parameters must be form-encoded for POST)</em>
+<pre>
+  api_key: simple authorization token for the request
+  stitch["name"]: title of the requested stitch -- usually a good indicator of the desired topic
+  stitch["description"]: should include helpful information to the designer such as names, occasion, etc.
+  stitch["notes"]: notes to the designer about length, desired mood, etc.
+</pre>
+
+<h5>Example Request</h5>
+<pre>
+  POST /stitches.json
+</pre>
+
+<h5>Example Response</h5>
+<pre>
+  {
+    <span class="json_green">"stitch":</span>
+    {
+      <span class="json_green">"id"</span>:406
+      <span class="json_green">"name"</span>:<span class="json_red">"<3 Doug"</span>,
+      <span class="json_green">"description"</span>:<span class="json_red">"To Doug From Dustin. I love you, man!"</span>,
+      <span class="json_green">"rejected"</span>:false
+    }
+  }
+</pre>
+<br />
+
+<h3>Example Implementation</h3>
+Below is a very simple Ruby on Rails implementation from within a controller.
+<pre>
+  <span class="json_green">class</span> <span class="json_blue json_bold">RequestsController</span> < <span class="json_red">ApplicationController</span>
+    <span class="json_green">require</span> '<span class="json_red">net/http</span>'
+
+    <span class="json_green">def</span> show
+      <span class="json_blue">@request</span> = <span class="json_red">Request</span>.find(params[<span class="json_blue">:id</span>]) <span class="json_grey"># locally stored, has `stitch_id`</span>
+      <span class="json_blue">@stitch</span> = get_stitch(<span class="json_blue">@request</span>.stitch_id) <span class="json_grey"># will be JSON</span>
+    <span class="json_green">end</span>
+
+    <span class="json_green">def</span> create
+      <span class="json_blue">@request</span> = <span class="json_red">Request</span>.new(params[<span class="json_blue">:request</span>]) <span class="json_grey"># local storage, params[] could have stitch[:name],
+                                                 stitch[:description], stitch[:notes]</span>
+
+      <span class="json_grey"># Try to request a stitch</span>
+      <span class="json_blue">@request</span>.stitch_id = request_stitch(params[<span class="json_blue">:stitch</span>])
+
+      <span class="json_green">if</span> <span class="json_blue">@request</span>.save
+        <span class="json_grey"># All good!</span>
+      <span class="json_green">else</span>
+        <span class="json_grey"># Error. Now what?</span>
+      <span class="json_green">end</span>
+    <span class="json_green">end</span>
+
+    <span class="json_green">private</span>
+
+    <span class="json_green">def</span> get_stitch(<span class="json_blue">stitch_id</span>)
+      <span class="json_blue">params</span> = {
+          <span class="json_blue">api_key</span>: '<span class="json_red">3LCWrhOtSgpYqoaaVZPt2A</span>'
+      }
+
+      <span class="json_blue">uri</span> = URI.parse('<span class="json_red">http://api.getstitch.co/stitches</span>' + "<span class="json_red">/#{stitch_id}.json</span>")
+      <span class="json_blue">uri</span>.query = URI.encode_www_form(<span class="json_blue">params</span>)
+      <span class="json_blue">response</span> = Net::HTTP.get_response(<span class="json_blue">uri</span>)
+
+      <span class="json_grey"># Parse JSON object</span>
+      JSON(<span class="json_blue">response</span>.body)["<span class="json_red">stitch</span>"]
+    <span class="json_green">end</span>
+
+    <span class="json_green">def</span> request_stitch(<span class="json_blue">stitch</span>)
+      <span class="json_blue">url</span> = URI.parse('<span class="json_red">http://api.getstitch.co/stitches.json</span>')
+      <span class="json_blue">req</span> = Net::HTTP::Post.new(<span class="json_blue">url</span>.path)
+      <span class="json_blue">req</span>.set_form_data(
+          {
+            <span class="json_blue">"api_key"</span> => '<span class="json_red">3LCWrhOtSgpYqoaaVZPt2A</span>',
+            <span class="json_blue">"stitch[name]"</span> => stitch[<span class="json_blue">:name</span>],
+            <span class="json_blue">"stitch[description]"</span> => stitch[<span class="json_blue">:description</span>],
+            <span class="json_blue">"stitch[notes]"</span> => stitch[<span class="json_blue">:notes</span>]
+          }
+      )
+      <span class="json_blue">res</span> = Net::HTTP.start(<span class="json_blue">url</span>.host, <span class="json_blue">url</span>.port) { |<span class="json_grey">http</span>| <span class="json_grey">http</span>.request(<span class="json_blue">req</span>) }
+      JSON(<span class="json_blue">res</span>.body)["<span class="json_red">stitch</span>"]["<span class="json_red">id</span>"]
+    <span class="json_green">end</span>
+
+  <span class="json_green">end</span>
+</pre>
