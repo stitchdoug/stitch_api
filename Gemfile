@@ -7,15 +7,15 @@ gem 'bcrypt-ruby', '3.0.1'
 gem 'faker', '1.0.1'
 gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
-#gem 'panda'
+gem 'panda'
 gem 'rabl', '0.8.6'
 gem 'oj', '2.1.4'
 
 group :development, :test do
-  #gem 'rspec-rails', '2.11.0'
-  #gem 'guard-rspec', '1.2.1'
-  #gem 'guard-spork', '1.2.0'
-  #gem 'spork', '0.9.2'
+  gem 'rspec-rails', '2.11.0'
+  gem 'guard-rspec', '1.2.1'
+  gem 'guard-spork', '1.2.0'
+  gem 'spork', '0.9.2'
 end
 
 # Gems used only for assets and not required
