@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe122cc5-365b-413f-891e-d961d4a88351" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/panda_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/panda_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/stitches_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/stitches_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/stitches/show.html.erb" afterPath="$PROJECT_DIR$/app/views/stitches/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stitch_api.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1381446887361" ignored="false" />
+    <file path="/Dummy.txt" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1383803456154" ignored="false" />
     <file path="/README.rdoc" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378400966381" ignored="false" />
     <file path="/database.yml" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378402528053" ignored="false" />
     <file path="/routes.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1379967366259" ignored="false" />
@@ -28,7 +28,7 @@
     <file path="/user_spec.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378751888290" ignored="false" />
     <file path="/20130906190046_add_index_to_users_email.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378494150375" ignored="false" />
     <file path="/Ruby Console" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378496596668" ignored="false" />
-    <file path="/show.html.erb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1379522168885" ignored="false" />
+    <file path="/show.html.erb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1383804012694" ignored="false" />
     <file path="/users_controller.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1379542619804" ignored="false" />
     <file path="/application_controller.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1378499541680" ignored="false" />
     <file path="/static_pages_controller.rb" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1379373835640" ignored="false" />
@@ -117,10 +117,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stitches_helper.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="stitches_helper.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/helpers/stitches_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="7" selection-start="253" selection-end="253" vertical-scroll-proportion="0.28896672">
+            <state line="11" column="7" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -135,10 +135,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/stitches/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="91" selection-start="325" selection-end="325" vertical-scroll-proportion="0.16357689">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="help.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/static_pages/help.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="157" selection-start="5445" selection-end="5445" vertical-scroll-proportion="-0.625">
+            <state line="95" column="157" selection-start="5445" selection-end="5445" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -171,7 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/videos_controller.rb" />
         <option value="$PROJECT_DIR$/app/helpers/sessions_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/stitches/create.rabl" />
         <option value="$PROJECT_DIR$/app/views/stitches/index.rabl" />
@@ -187,6 +195,7 @@
         <option value="$PROJECT_DIR$/app/views/static_pages/help.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/panda_controller.rb" />
         <option value="$PROJECT_DIR$/app/helpers/stitches_helper.rb" />
+        <option value="$PROJECT_DIR$/app/views/stitches/show.html.erb" />
       </list>
     </option>
   </component>
@@ -229,7 +238,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -328,7 +336,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static_pages" />
+              <option name="myItemId" value="stitches" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -350,7 +358,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shared" />
+              <option name="myItemId" value="static_pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -390,67 +398,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stitch_api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stitch_api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stitch_api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stitch_api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stitch_api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stitch_api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="RailsProjectView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -864,7 +815,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929292" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21790724" sideWeight="0.60383064" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973032" sideWeight="0.67373735" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26914778" sideWeight="0.60383064" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27562028" sideWeight="0.60383064" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39616936" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -943,11 +894,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p448@rails3tutorial2ndEd/gems/panda-1.6.0/lib/panda/config.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/secret_token.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -1007,14 +953,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static_pages/help.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="157" selection-start="5445" selection-end="5445" vertical-scroll-proportion="-0.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="40" selection-start="333" selection-end="333" vertical-scroll-proportion="-4.375">
+        <state line="95" column="157" selection-start="5445" selection-end="5445" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1028,7 +967,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/stitches_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="7" selection-start="253" selection-end="253" vertical-scroll-proportion="0.28896672">
+        <state line="11" column="7" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="40" selection-start="333" selection-end="333" vertical-scroll-proportion="-4.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/stitches/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="91" selection-start="325" selection-end="325" vertical-scroll-proportion="0.16357689">
           <folding />
         </state>
       </provider>
