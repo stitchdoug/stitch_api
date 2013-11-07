@@ -182,7 +182,7 @@ DEPENDENCIES
   growl (= 1.0.3)
   jquery-rails (= 2.0.2)
   oj (= 2.1.4)
-  panda (~> 1.6.0)
+  panda
   pg (= 0.12.2)
   rabl (= 0.8.6)
   rails (= 3.2.9)
