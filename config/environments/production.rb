@@ -64,4 +64,7 @@ StitchApi::Application.configure do
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
+
+  # PandaStream URL (for Heroku add-on)
+  ENV['PANDASTREAM_URL'] = "https://52d4e21149e84899710f:228ebda540e86e862f66@api.pandastream.com/96348f2c8ffdceaca73dd9f5fa515d76"
 end
