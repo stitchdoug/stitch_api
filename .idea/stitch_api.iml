@@ -43,7 +43,6 @@
     <orderEntry type="library" scope="PROVIDED" name="factory_girl (v4.1.0, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="factory_girl_rails (v4.1.0, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="faker (v1.0.1, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="faraday (v0.8.8, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.9.0, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="gherkin (v2.12.1, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="growl (v1.0.3, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
@@ -57,10 +56,8 @@
     <orderEntry type="library" scope="PROVIDED" name="mini_portile (v0.5.1, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.7.9, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_test (v0.0.2, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="multipart-post (v1.2.0, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.6.0, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="oj (v2.1.4, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="panda (v1.6.0, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pg (v0.12.2, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="polyglot (v0.3.3, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rabl (v0.8.6, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
@@ -73,7 +70,6 @@
     <orderEntry type="library" scope="PROVIDED" name="rake (v10.1.0, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rb-fsevent (v0.9.1, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rdoc (v3.12.2, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="ruby-hmac (v0.4.0, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubyzip (v0.9.9, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass (v3.2.10, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v3.2.5, RVM: ruby-1.9.3-p448 [rails3tutorial2ndEd]) [gem]" level="application" />
