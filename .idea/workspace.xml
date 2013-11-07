@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe122cc5-365b-413f-891e-d961d4a88351" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/stitches/show.html.erb" afterPath="$PROJECT_DIR$/app/views/stitches/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="fe122cc5-365b-413f-891e-d961d4a88351" name="Default" comment="" />
     <ignored path="stitch_api.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="fe122cc5-365b-413f-891e-d961d4a88351" time="1383803456154" ignored="false" />
@@ -138,7 +135,7 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/stitches/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="91" selection-start="325" selection-end="325" vertical-scroll-proportion="0.16357689">
+            <state line="17" column="23" selection-start="495" selection-end="495" vertical-scroll-proportion="0.48664123">
               <folding />
             </state>
           </provider>
@@ -981,7 +978,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/stitches/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="91" selection-start="325" selection-end="325" vertical-scroll-proportion="0.16357689">
+        <state line="17" column="23" selection-start="495" selection-end="495" vertical-scroll-proportion="0.48664123">
           <folding />
         </state>
       </provider>
